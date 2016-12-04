@@ -68,9 +68,7 @@ public class FileuploadServlet extends HttpServlet{
                         
                         FileOutputStream outputstream = new  FileOutputStream(new File(saveDir,Newfilename));
                         IOUtils.copy(inputstream, outputstream);
-                        outputstream.flush();
-                        outputstream.close();
-                        inputstream.close();
+                       
 					}
 				}
 			} catch (FileUploadException e) {

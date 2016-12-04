@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
+=======
   <component name="AntConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
@@ -8,12 +10,16 @@
     <option name="USE_DEFAULT_CODE_STYLE_SCHEME" value="true" />
     <option name="CODE_STYLE_SCHEME" value="" />
   </component>
+>>>>>>> c87c6a605f335ee26cd1336d09b322237da542e7
   <component name="CompilerConfiguration">
     <wildcardResourcePatterns>
       <entry name="!?*.java" />
     </wildcardResourcePatterns>
   </component>
   <component name="Encoding">
+<<<<<<< HEAD
+    <file url="file://$PROJECT_DIR$/src/main/java/com/kaishengit/web/FileuploadServlet.java" charset="ISO-8859-1" />
+=======
     <file url="file://$PROJECT_DIR$/src/main/java/com/kaishengit/web/FileuploadServlet.java" charset="UTF-8" />
   </component>
   <component name="ExportToHTMLSettings">
@@ -26,6 +32,7 @@
     <option name="RELEASE_TAG" />
     <option name="LOG_MESSAGE" />
     <option name="CHECKOUT_AFTER_IMPORT" value="true" />
+>>>>>>> c87c6a605f335ee26cd1336d09b322237da542e7
   </component>
   <component name="InspectionProjectProfileManager">
     <profile version="1.0">
@@ -33,6 +40,8 @@
     </profile>
     <version value="1.0" />
   </component>
+<<<<<<< HEAD
+=======
   <component name="JUnitProjectSettings">
     <option name="TEST_RUNNER" value="UI" />
   </component>
@@ -78,4 +87,5 @@
     </modules>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" />
+>>>>>>> c87c6a605f335ee26cd1336d09b322237da542e7
 </project>
