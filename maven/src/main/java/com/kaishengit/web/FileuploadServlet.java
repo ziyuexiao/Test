@@ -18,7 +18,7 @@ import org.apache.commons.fileupload.FileUploadException;
 import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
 import org.apache.commons.io.IOUtils;
-//乱码啦
+//乱码啦。。。。
 @WebServlet("/upload")
 public class FileuploadServlet extends HttpServlet{
 
