@@ -18,7 +18,7 @@ import org.apache.commons.fileupload.FileUploadException;
 import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
 import org.apache.commons.io.IOUtils;
-
+//ä¹±ç å•¦
 @WebServlet("/upload")
 public class FileuploadServlet extends HttpServlet{
 
@@ -29,18 +29,18 @@ public class FileuploadServlet extends HttpServlet{
 	}
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		//ÎÄ¼şÉÏ´«ºó´æ·ÅµÄÂ·¾¶
+		//ï¿½Ä¼ï¿½ï¿½Ï´ï¿½ï¿½ï¿½ï¿½Åµï¿½Â·ï¿½ï¿½
 		File saveDir = new File("F:/upload");
 		if(!saveDir.exists()){
 			saveDir.mkdirs();
 		}
-		//ÎÄ¼ş´æ·ÅµÄÁÙÊ±Â·¾¶Ãû
+		//ï¿½Ä¼ï¿½ï¿½ï¿½Åµï¿½ï¿½ï¿½Ê±Â·ï¿½ï¿½ï¿½ï¿½
 		File temDir = new File("F:/temDir");
 		if(!temDir.exists()){
 			temDir.mkdirs();
 		}
 		
-		//ÅĞ¶Ï±íµ¥ÊÇ·ñÉèÖÃenctypeÊôĞÔ
+		//ï¿½Ğ¶Ï±ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½enctypeï¿½ï¿½ï¿½ï¿½
 		if(ServletFileUpload.isMultipartContent(req)){
 			DiskFileItemFactory itemFactory = new DiskFileItemFactory();
 			itemFactory.setSizeThreshold(1024*1024);
@@ -53,15 +53,15 @@ public class FileuploadServlet extends HttpServlet{
 				List<FileItem> fileItemList = servletfileupload.parseRequest(req);
 				for(FileItem item:fileItemList){
 					if(item.isFormField()){
-						//ÆÕÍ¨ÔªËØ
+						//ï¿½ï¿½Í¨Ôªï¿½ï¿½
 						System.out.println("FieldName:" + item.getFieldName());
 						System.out.println("getString:" + item.getString("UTF-8"));
 					}else{
-						 //ÎÄ¼şÔªËØ
-                        System.out.println("FieldName:" + item.getFieldName()); //»ñÈ¡±íµ¥ÖĞnameÊôĞÔµÄÖµ
-                        System.out.println("Name:" + item.getName()); //»ñÈ¡ÉÏ´«ÎÄ¼şµÄÔ­Ê¼Ãû³Æ(ÎÄ¼şÃû)
+						 //ï¿½Ä¼ï¿½Ôªï¿½ï¿½
+                        System.out.println("FieldName:" + item.getFieldName()); //ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½nameï¿½ï¿½ï¿½Ôµï¿½Öµ
+                        System.out.println("Name:" + item.getName()); //ï¿½ï¿½È¡ï¿½Ï´ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½Ô­Ê¼ï¿½ï¿½ï¿½ï¿½(ï¿½Ä¼ï¿½ï¿½ï¿½)
                         
-                        //»ñÈ¡ÎÄ¼şµÄÊäÈëÁ÷
+                        //ï¿½ï¿½È¡ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
                         InputStream inputstream=item.getInputStream();
                         String filename = item.getName();
                         String Newfilename = UUID.randomUUID().toString()+filename.substring(filename.lastIndexOf("."));
@@ -79,7 +79,7 @@ public class FileuploadServlet extends HttpServlet{
 			}
 			
 		}else{
-			throw new RuntimeException("form±íµ¥enctypeÊôĞÔÉèÖÃÒì³£");
+			throw new RuntimeException("formï¿½ï¿½enctypeï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ì³£");
 		}
 		
 	}
